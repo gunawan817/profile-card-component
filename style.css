@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  min-height: 100vh;
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-color: var(--dark-cyan);
+  background-repeat: no-repeat;
+  background-position: right 160% top 320%, left 140% bottom 320%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  max-width: 35rem;
+}
+
+.cards {
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin: 8rem 0;
+  /* transform: scale(.7); */
+}
+
+.card-bg {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 18rem;
+}
+
+.card-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img {
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  display: block;
+  margin-top: -3.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-name {
+  font-size: 2rem;
+  color: var(--dark-desaturated-blue);
+  margin-bottom: 1rem;
+}
+
+span {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.card-location {
+  font-size: 1.3rem;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--dark-gray);
+  text-align: center;
+}
+
+.card-detail {
+  padding: 2rem;
+}
+
+.card-detail .num {
+  font-size: 2rem;
+  color: var(--dark-desaturated-blue);
+}
+
+.card-detail .name {
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+footer {
+  color: var(--dark-desaturated-blue);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: right -25% top 600%, left -25% bottom 600%;
+  }
+}
