@@ -108,11 +108,11 @@ footer {
   color: var(--dark-desaturated-blue);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     background-position: right -20% top 250%, left -20% bottom 250%;
   }
-}
+} */
 @media (max-width: 368px) {
   .cards {
     margin: 1rem 0;
